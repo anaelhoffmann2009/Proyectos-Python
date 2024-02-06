@@ -7,14 +7,13 @@ dev_dict = {
     "Script": "Conjunto de código que cumple una función determinada dentro de un software"
 }
 
-word = str(input("Write a word that you don't understand: "))
-
 def search_in_Dictionary():
+    word = str(input("Write a word that you don't understand: "))
     # To ask a word in dictionary app
-    for i in range(4):
-        if word in dev_dict.keys():
-            print(dev_dict[word])
-        else:
-            print("¡Error!: The word is not in dictionary.")
+    if word in dev_dict.keys():
+        print(dev_dict[word])
+    else:
+        print("¡Error!: The word is not in dictionary.")
+        word = str(input("Write a word that you don't understand: "))
         
 search_in_Dictionary()
