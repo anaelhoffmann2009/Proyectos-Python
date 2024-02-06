@@ -10,9 +10,11 @@ dev_dict = {
 word = str(input("Write a word that you don't understand: "))
 
 def search_in_Dictionary():
-    if word in dev_dict.keys():
+    # To ask a word in dictionary app
+    for i in range(4):
+        if word in dev_dict.keys():
             print(dev_dict[word])
-    else:
-        print("¡Error!: The word is not in dictionary.")
+        else:
+            print("¡Error!: The word is not in dictionary.")
         
 search_in_Dictionary()
