@@ -1,2 +1,8 @@
-# Proyectos-Python
-This is a Python projects repository created by Anael Hoffmann
+# translator-esp
+¡Mi traductor!
+
+Esta aplicación de entrenamiento te permite aprender palabras de otros idiomas.
+
+¡Оbre el archivo main.py y echa un buen vistazo al código!
+
+Actualizado y optimizado por Anael Hoffmann.
