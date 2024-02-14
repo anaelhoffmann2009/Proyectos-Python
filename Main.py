@@ -1,4 +1,5 @@
 import tkinter as tk
+import pyperclip
 import random
 
 class PasswordGenerator():
@@ -37,18 +38,21 @@ class PasswordGenerator():
             x = random.choice(self.caracteres)
             self.password += x
         
+        self.ask.destroy()
         self.text = tk.Label(
             self.window,
-            text=f"Su contraseña creada es: {self.password}",
+            text="Su contraseña creada es: ",
             font=("VT323", 25),
             fg="white",
             bg="black"
         )
 
         self.text.pack()
-        self.text.place(x=100, y=630)
-    
+        self.text.place(x=450, y=300)
+        
         self.entry.delete(0, 'end')
+        self.entry.insert(0, self.password)
+        pyperclip.copy(self.password)
 
 if __name__ == "__main__":
     pg = PasswordGenerator()
