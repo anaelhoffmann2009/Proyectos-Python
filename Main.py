@@ -4,7 +4,7 @@ import random
 
 class PasswordGenerator():
     def __init__(self):
-        self.caracteres = "$#?*%ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz"
+        self.caracteres = "$#?*%ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz1234567890"
         self.window = tk.Tk()
         self.window.geometry("1280x740")
         self.window.configure(background="black")
